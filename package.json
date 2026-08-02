@@ -37,11 +37,11 @@
   ],
   "author": "Oviyan S",
   "bin": {
-    "rynex": "./bin/rynex.js"
+    "rynex": "bin/rynex.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Oviyan007/DevForge"
+    "url": "git+https://github.com/Oviyan007/DevForge.git"
   },
   "bugs": {
     "url": "https://github.com/Oviyan007/DevForgeissues"
