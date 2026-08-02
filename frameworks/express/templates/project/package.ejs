@@ -1,0 +1,34 @@
+{
+  "name": "<%= projectName %>",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+<%
+const deps = Object.entries(dependencies.dependencies);
+deps.forEach(([name, version], index) => {
+-%>
+    "<%= name %>": "<%= version %>"<%= index < deps.length - 1 ? "," : "" %>
+<%
+});
+-%>
+  },
+  "devDependencies": {
+<%
+const devDeps = Object.entries(dependencies.devDependencies);
+devDeps.forEach(([name, version], index) => {
+-%>
+    "<%= name %>": "<%= version %>"<%= index < devDeps.length - 1 ? "," : "" %>
+<%
+});
+-%>
+  }
+}

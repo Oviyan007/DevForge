@@ -1,0 +1,10 @@
+class <%= className %>Controller {
+  async index(req, res) {
+    return res.json({
+      success: true,
+      message: "<%= moduleName %> module",
+    });
+  }
+}
+
+module.exports = new <%= className %>Controller();

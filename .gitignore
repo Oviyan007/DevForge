@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+coverage/
+
+# Environment
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+
+# Test generated projects
+travel-api/
+test-api/
+demo/
+sandbox/
+
+# Build artifacts
+dist/
+
+# npm package archive
+*.tgz
