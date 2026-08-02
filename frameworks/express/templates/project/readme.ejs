@@ -1,8 +1,116 @@
-# <%= projectName %> A scalable Express.js application generated with
-**DevForge**. ## Tech Stack - Node.js - Express.js - MongoDB - Mongoose ##
-Getting Started ### Install dependencies ```bash npm install ``` ### Configure
-environment variables Update the `.env` file with your configuration. ### Run
-the development server ```bash npm run dev ``` ### Start the production server
-```bash npm start ``` ## Project Structure ```text src/ ├── config/ ├── helpers/
-├── middlewares/ ├── modules/ ├── routes/ ├── seeds/ └── shared/ ``` Generated
-with ❤️ using DevForge.
+# <%= projectName %>
+
+A scalable and production-ready **Express.js** application generated with **Rynex CLI**.
+
+---
+
+## 🚀 Tech Stack
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+---
+
+## 📦 Getting Started
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Configure Environment Variables
+
+Update the `.env` file with your project-specific configuration.
+
+### 3. Start the Development Server
+
+```bash
+npm run dev
+```
+
+### 4. Start the Production Server
+
+```bash
+npm start
+```
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── config/
+│   ├── db.js
+│   ├── redis.js
+│   ├── socket.js
+│   └── bullmq.js
+│
+├── helpers/
+├── middlewares/
+├── modules/
+├── routes/
+├── seeds/
+│
+└── shared/
+    ├── constants/
+    └── utils/
+```
+
+---
+
+## 🏗️ Architecture
+
+The generated project follows a modular architecture where each feature owns its own:
+
+- Controller
+- Service
+- Repository
+- Model
+- Route
+- Constants
+- Pipeline
+- Utilities
+
+Typical request flow:
+
+```text
+Route
+   │
+   ▼
+Controller
+   │
+   ▼
+Service
+   │
+   ▼
+Repository
+   │
+   ▼
+Mongoose Model
+   │
+   ▼
+MongoDB
+```
+
+Business logic lives inside **Services**, while **Repositories** are responsible only for database access.
+
+---
+
+## 📚 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start the development server |
+| `npm start` | Start the production server |
+
+---
+
+## ❤️ Generated with Rynex
+
+Scaffolded using **Rynex CLI** to help developers build scalable, maintainable, and production-ready backend applications faster.
+
+Happy coding! 🚀

@@ -4,8 +4,8 @@ const registerGenerateCommand = require("./commands/generate.command");
 const program = new Command();
 
 program
-  .name("devforge")
-  .description("Opinionated Express.js CLI Generator")
+  .name("rynex")
+  .description("Opinionated Node.js Application Generator")
   .version("1.0.0");
 
 registerCreateCommand(program);

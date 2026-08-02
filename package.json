@@ -13,8 +13,8 @@
     "validate-npm-package-name": "^7.0.2"
   },
   "scripts": {
-    "dev": "nodemon bin/devforge.js",
-    "start": "node bin/devforge.js",
+    "dev": "nodemon  bin/rynex.js",
+    "start": "node  bin/rynex.js",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -23,14 +23,28 @@
     "nodemon": "^3.1.14",
     "prettier": "^3.9.6"
   },
-  "name": "devforge",
-  "version": "1.0.0",
+  "name": "rynex-cli",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "express",
+    "node",
+    "generator",
+    "scaffold",
+    "boilerplate"
+  ],
+  "author": "Oviyan S",
   "bin": {
-    "devforge": "./bin/devforge.js"
+    "rynex": "./bin/rynex.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oviyan007/DevForge"
+  },
+  "bugs": {
+    "url": "https://github.com/Oviyan007/DevForgeissues"
   },
   "license": "ISC",
   "type": "commonjs"

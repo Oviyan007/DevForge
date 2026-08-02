@@ -3,7 +3,7 @@ const path = require("path");
 
 class ConfigService {
   constructor() {
-    this.configFile = "devforge.config.json";
+    this.configFile = "rynex.config.json";
   }
 
   async load(projectPath = process.cwd()) {
@@ -13,7 +13,7 @@ class ConfigService {
 
     if (!exists) {
       throw new Error(
-        `"${this.configFile}" not found. Are you inside a DevForge project?`,
+        `"${this.configFile}" not found. Are you inside a Rynez project?`,
       );
     }
 

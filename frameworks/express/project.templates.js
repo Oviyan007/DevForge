@@ -16,8 +16,8 @@ module.exports = [
     output: "README.md",
   },
   {
-    template: "project/devforge.config.ejs",
-    output: "devforge.config.json",
+    template: "project/rynex.config.ejs",
+    output: "rynex.config.json",
   },
   {
     template: "project/app.ejs",
